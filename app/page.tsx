@@ -41,6 +41,7 @@ export default function Home() {
             alt="Iraj Shirkhani"
             className="w-full max-w-md h-auto rounded-xs"
             sizes="448px"
+            loading="eager"
           />
           <Paragraph>
             Jag är lärare med snart 20 års erfarenhet av att arbeta med barn i
