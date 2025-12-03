@@ -40,7 +40,7 @@ export default function Home() {
             src={irajPhoto}
             alt="Iraj Shirkhani"
             className="w-full max-w-md h-auto rounded-xs"
-            width={448}
+            sizes="448px"
           />
           <Paragraph>
             Jag är lärare med snart 20 års erfarenhet av att arbeta med barn i
