@@ -1,5 +1,32 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 import irajPhoto from "./Iraj_foto_oskar_omne01.jpg";
+
+export const metadata: Metadata = {
+  title: "Iraj Shirkhani",
+  description:
+    "Jag är lärare med snart 20 års erfarenhet av att arbeta med barn i riskzon, barn och unga som hamnat snett, burit på trauma eller vuxit upp i utsatta miljöer och haft en dysfunktionell skolgång. Mitt driv har alltid varit detsamma: att möta de barn som ofta glöms bort och ge dem trygghet, struktur och en vuxen som aldrig ger upp.",
+  openGraph: {
+    title: "Iraj Shirkhani",
+    description:
+      "Jag är lärare med snart 20 års erfarenhet av att arbeta med barn i riskzon, barn och unga som hamnat snett, burit på trauma eller vuxit upp i utsatta miljöer och haft en dysfunktionell skolgång. Mitt driv har alltid varit detsamma: att möta de barn som ofta glöms bort och ge dem trygghet, struktur och en vuxen som aldrig ger upp.",
+    images: [
+      {
+        url: irajPhoto.src,
+        width: irajPhoto.width,
+        height: irajPhoto.height,
+        alt: "Iraj Shirkhani",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Iraj Shirkhani",
+    description:
+      "Jag är lärare med snart 20 års erfarenhet av att arbeta med barn i riskzon, barn och unga som hamnat snett, burit på trauma eller vuxit upp i utsatta miljöer och haft en dysfunktionell skolgång. Mitt driv har alltid varit detsamma: att möta de barn som ofta glöms bort och ge dem trygghet, struktur och en vuxen som aldrig ger upp.",
+    images: [irajPhoto.src],
+  },
+};
 
 export default function Home() {
   return (
